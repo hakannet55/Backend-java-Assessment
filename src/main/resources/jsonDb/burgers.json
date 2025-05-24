@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hamburger",
+    "price": 5.99,
+    "id": 1
+  },
+  {
+    "name": "Cheeseburger",
+    "price": 6.99,
+    "id": 2
+  },
+  {
+    "name": "Veggieburger",
+    "price": 6.99,
+    "id": 3
+  }
+]
