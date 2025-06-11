@@ -1,17 +1,32 @@
 [
   {
-    "name": "Hamburger",
-    "price": 5.99,
-    "id": 1
+    "id": 1,
+    "name": "Classic Burger",
+    "price": 10.99,
+    "description": "Classic burger with cheese"
   },
   {
-    "name": "Cheeseburger",
-    "price": 6.99,
-    "id": 2
+    "id": 2,
+    "name": "Double Cheese Burger",
+    "price": 12.99,
+    "description": "Double cheese burger"
   },
   {
-    "name": "Veggieburger",
-    "price": 6.99,
-    "id": 3
+    "id": 3,
+    "name": "Bacon Burger",
+    "price": 11.99,
+    "description": "Bacon burger with cheese"
+  },
+  {
+    "id": 4,
+    "name": "Veggie Burger",
+    "price": 9.99,
+    "description": "Veggie burger with cheese"
+  },
+  {
+    "id": 5,
+    "name": "Chilli Cheese Burger",
+    "price": 13.99,
+    "description": "Chilli cheese burger"
   }
 ]

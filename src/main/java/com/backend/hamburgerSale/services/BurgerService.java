@@ -26,8 +26,8 @@ public class BurgerService {
     }
 
     // getBurgerById
-    public Burger getBurgerById(Long id) {
-        return burgerRepository.findById(id).orElse(null);
+    public Burger getBurgerById(Long id) throws IOException {
+        return jsonReader.readBurgersFromFile().stream().filter(burger -> burger.getId() == id).findFirst().orElseThrow();
     }
 
     // createBurger

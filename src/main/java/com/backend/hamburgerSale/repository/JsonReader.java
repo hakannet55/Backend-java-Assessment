@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.util.List;
 
 public class JsonReader {
-    public static String filePathBurger = "src/main/com.backend.hamburgerSale/jsonDb/burgers.json";
-    public static String filePathUser = "src/main/com.backend.hamburgerSale/jsonDb/users.json"; //filePathUser
+    public static String filePathBurger = "src/main/resources/jsonDb/burgers.json";
+    public static String filePathUser = "src/main/resources/jsonDb/users.json"; //filePathUser
 
     public static void writeBurgersToFile(List<User> users) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -25,7 +25,7 @@ public class JsonReader {
 
     public List<Burger> readBurgersFromFile() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        File file = new File("jsonDb/burgers.json");
+        File file = new File(this.filePathBurger);
         List<Burger> burgers = objectMapper.readValue(file, new TypeReference<List<Burger>>() {
         });
         return burgers;

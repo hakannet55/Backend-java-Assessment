@@ -26,7 +26,7 @@ public class BurgerController {
 
     // getByid
     @GetMapping("/{id}")
-    public Burger getBurgerById(Long id) {
+    public Burger getBurgerById(Long id) throws IOException {
         return burgerService.getBurgerById(id);
     }
 
