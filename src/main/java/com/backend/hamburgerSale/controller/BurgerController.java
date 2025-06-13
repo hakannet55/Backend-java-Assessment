@@ -9,13 +9,13 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/burgers")
+@RequestMapping("/api")
 public class BurgerController {
 
     @Autowired
     private BurgerService burgerService;
 
-    @GetMapping("/all")
+    @GetMapping("/menu")
     public List<Burger> getAllBurgers() {
         try {
             return burgerService.getAllBurgers();
